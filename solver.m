@@ -1,4 +1,4 @@
-function [x] = solver(f,df,x0,tol) 
+function [x] = solver(f,df,x0,tol)
     k = 2;
     y(1) = x0 - (f(x0)/df(x0));
     y(2) = y(1) - (f(y(1)) / df(y(1)));
