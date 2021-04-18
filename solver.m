@@ -7,4 +7,4 @@ function [x] = solver(f,df,x0,tol)
         y(k) = y(k - 1) - (f(y(k - 1)) / df(y(k - 1))); 
     end
     x = y(k);
-end 
+end
