@@ -1,6 +1,6 @@
 # water_tank_model 
 This is an MATLAB programming project from the University of Waterloo's CS371/AMATH242 that involved predicting the amount of time necessary for water to fill a uniquely shaped tank. 
- 
+
 The description of the problem is as follows:
 A water tank has shape shown in Figure 1. Water is delivered to this tank through the bottom. Water delivery rate is defined by a function V(t)=3t+2t^2 +cos(4t)*exp(−t/4)−1, such that V (0) = 0 (here V (t) denotes the volume of water delivered to the system by the time t). In this assignment, you will simulate the process of filling up this tank. There are several reasonable questions to answer:
 - At what time water will reach the top of the tank?
