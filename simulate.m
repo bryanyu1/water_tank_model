@@ -1,6 +1,6 @@
 function [y] = simulate(r1,l1,l2,r2,N,tol) 
-    V = @(t) 3 * t + 2 * t.^2 + cos(4 * t) * exp(-t/4) - 1; 
-    dV = @(t) 4 * t - (cos(4 * t) * exp(-t/4))/4 - 4 * sin(4 * t) * exp(-t/4) + 3 
+    V = @(t) 3 * t + 2 * t.^2 + cos(4 * t) * exp(-t/4) - 1;
+    dV = @(t) 4 * t - (cos(4 * t) * exp(-t/4))/4 - 4 * sin(4 * t) * exp(-t/4) + 3; 
      
     sph = (4 / 3) * pi * r1.^3; 
     cone = (1 / 3) * pi * r2.^2 * l1; 
