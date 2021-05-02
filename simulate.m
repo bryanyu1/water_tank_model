@@ -6,7 +6,7 @@ function [y] = simulate(r1,l1,l2,r2,N,tol)
     cone = (1 / 3) * pi * r2.^2 * l1; 
     cyl = pi * r2.^2 * l2; 
     hem = (2 / 3) * pi * r2.^3; 
-    
+     
     V1 = @(t) 3 * t + 2 * t.^2 + cos(4 * t) * exp(-t/4) - 1 - sph;
     V2 = @(t) 3 * t + 2 * t.^2 + cos(4 * t) * exp(-t/4) - 1 - sph - cone;
     V3 = @(t) 3 * t + 2 * t.^2 + cos(4 * t) * exp(-t/4) - 1 - sph - cone - cyl;
