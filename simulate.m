@@ -11,7 +11,7 @@ function [y] = simulate(r1,l1,l2,r2,N,tol)
     V2 = @(t) 3 * t + 2 * t.^2 + cos(4 * t) * exp(-t/4) - 1 - sph - cone;
     V3 = @(t) 3 * t + 2 * t.^2 + cos(4 * t) * exp(-t/4) - 1 - sph - cone - cyl;
     V4 = @(t) 3 * t + 2 * t.^2 + cos(4 * t) * exp(-t/4) - 1 - sph - cone - cyl - hem;
-
+ 
     Ta = solver(V1,dV,0,tol);
     Tb = solver(V2,dV,0,tol);
     Tc = solver(V3,dV,0,tol);
