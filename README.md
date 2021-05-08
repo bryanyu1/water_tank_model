@@ -1,4 +1,4 @@
-# water_tank_model 
+# water_tank_model
 This is an MATLAB programming project from the University of Waterloo's CS371/AMATH242 that involved predicting the amount of time necessary for water to fill a uniquely shaped tank. 
 
 The description of the problem is as follows:
